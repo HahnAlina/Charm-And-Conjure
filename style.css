@@ -1,0 +1,562 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up basic layout and styles for header */
+header {
+  background-color: #e2ddda;
+  color: #322b2f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Playfair Display';
+}
+
+.logo img {
+  max-width: 60px; /* Adjust the max-width to your desired size */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin-left: 15px; /* Adjust the margin as needed for spacing */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #322b2f;
+  text-decoration: none;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #322b2f;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Example CSS for homepage banner container */
+.banner-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* or other vertical alignment value, e.g., flex-end, center */
+  margin-top: 0; /* Add this line to reset margin-top to 0 */
+}
+
+.banner-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner-container img:first-child {
+  opacity: 1;
+}
+
+
+
+.banner-text {
+  text-align: center;
+  background-color: #fff;
+  padding: 0px 0;
+}
+
+.banner-text-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #322b2f;
+  margin-top: 90px;
+}
+
+.banner-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.banner-text p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+.banner-container-02 {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* or other vertical alignment value, e.g., flex-end, center */
+  margin-top: 0; /* Add this line to reset margin-top to 0 */
+}
+
+.banner-container-02 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner-container-02 img:first-child {
+  opacity: 1;
+}
+
+
+
+
+
+/* Set up basic layout and styles for products section */
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  flex-basis: 200px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Lato';
+}
+
+.product img {
+  max-width: 100%;
+}
+
+/* Set up basic layout and styles for footer */
+footer {
+  background-color: #e2ddda;
+  color: #322b2f;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lato';
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contact-info {
+  grid-column: 1 / span 1;
+  font-family: 'Lato';
+}
+
+.smaller-text {
+  font-size: 14px;
+}
+
+.social-media {
+  grid-column: 2 / span 1;
+  text-align: center;
+  font-family: 'Lato';
+}
+
+.social-media i {
+  color: #322b2f;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Light.ttf');
+}
+
+.about-content {
+  margin-top: 90px;
+  text-align: center;
+  color: #322b2f;
+  padding-left: 400px; /* Add left and right padding */
+  padding-right: 400px;
+  margin-bottom: 90px;
+}
+
+.about-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-content p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-top: 60px; /* Adjust the margin top as needed */
+  margin-bottom: 30px;
+}
+
+
+.footer-container {
+  text-align: center;
+}
+
+.headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+.product-page {
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-content {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 150px;
+}
+
+.product-image img {
+  width: 500px; /* Adjust the width as needed */
+  margin: 20px;
+}
+
+.product-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-left: 25px;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display font family */
+  color: #322b2f; /* Apply font color */
+}
+
+.product-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif; /* Apply Lato font family */
+  color: #322b2f; /* Apply font color */
+}
+
+.product-price {
+  font-size: 20px; /* Adjust the font size as needed */
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display font family */
+  color: #322b2f; /* Apply font color */
+}
+
+.product-price strong {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-price span {
+  display: inline-block;
+  font-family: 'Playfair Display', serif; /* Apply Playfair Display font family */
+  color: #322b2f; /* Apply font color */
+  padding-bottom: 4px;
+}
+
+.product-info {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Lato', sans-serif; /* Apply Playfair Display font family */
+  color: #322b2f; /* Apply font color */
+}
+
+.product-info li {
+  margin-bottom: 8px;
+}
+
+.product-details .product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-details .product-price strong::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-left: 6px;
+  margin-bottom: -2px; /* Adjust the value as needed */
+  background-image: url(assets/spellcoin_symbol.png);
+  background-size: cover; /* Adjust the image sizing */
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: -4px; /* Adjust the value as needed */
+}
+
+.product-details .product-price span {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between product previews */
+  padding: 0 150px; /* Add left and right padding */
+}
+
+.product-preview {
+  text-align: center;
+}
+
+.product-preview a {
+  text-decoration: none;
+  color: #322b2f;
+}
+
+.product-preview img {
+  width: 100%; /* Adjust the image size as needed */
+  max-width: 200px; /* Set a maximum width for the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+.product-preview h3 {
+  margin-top: 10px;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-family: 'Lato', sans-serif;
+}
+
+#product-previews {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 50px; /* Adjust the gap between products as needed */
+  padding: 0 150px; /* Add left and right padding */
+  padding-bottom: 60px;
+}
+
+
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 185px;
+}
+
+.search-bar input {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #e2ddda;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.search-bar button {
+  margin-left: 8px;
+  padding: 10px 20px;
+  background-color: #322b2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #322b2f;
+}
+
+
+
+
+
+
+
+.category-buttons {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-buttons button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #e2ddda;
+  color: #322b2f;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+}
+
+.category-buttons button.selected {
+  background-color: #322b2f;
+  color: #ffffff;
+}
+
+
+
+
+
+
+#product-carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  margin: 100px;
+}
+
+.carousel-item-container {
+  display: flex;
+  /* Add any additional styles for the carousel item container */
+  /* ... */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 240px; /* Adjust the width as needed */
+  margin-right: 10px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-item h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+.explore-section {
+  background-color: #fff;
+  color: #322b2f;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.explore-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.explore-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #322b2f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  border-radius: 4px;
+}
+
+.explore-button:hover {
+  background-color: #322b2f;
+}
