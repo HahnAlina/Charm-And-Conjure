@@ -359,7 +359,7 @@ footer {
   height: 26px;
   margin-left: 6px;
   margin-bottom: -2px; /* Adjust the value as needed */
-  background-image: url(assets/spellcoin_symbol.jpg);
+  background-image: url(assets/spellcoin_symbol.png);
   background-size: cover; /* Adjust the image sizing */
   background-repeat: no-repeat;
   background-position: center;
