@@ -67,7 +67,7 @@ nav {
 /* Example CSS for homepage banner container */
 .banner-container {
   width: 100%;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   position: relative;
   display: flex;
